@@ -2,7 +2,7 @@
 
 1. library
 
-   ```
+   ```bash
    sudo apt-get install build-essential
    
    sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
@@ -16,7 +16,7 @@
 
 2. cmake
 
-   ```
+   ```bash
    cmake -D CMAKE_BUILD_TYPE=DEBUG -D WITH_CUDA=ON -D CUDA_GENERATION=Auto -D ENABLE_FAST_MATH=1 -D WITH_CUBLAS=1 -D WITH_CUDNN=0N -D WITH_OPENCL=ON -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules -D BUILD_EXAMPLES=ON -D WITH_NVCUVID=OFF ..
    ```
 
