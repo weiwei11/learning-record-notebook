@@ -34,7 +34,7 @@ sudo apt-get install libdc1394-22-dev
    
 2. cmake
 ```
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D OPENCV_ENABLE_NONFREE=ON -D WITH_CUDA=ON -D WITH_CUDNN=ON -D OPENCV_DNN_CUDA=ON -D ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D CUDA_ARCH_BIN=7.5 -D WITH_CUBLAS=1 -D HAVE_opencv_python3=ON -D BUILD_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=/home/deke/lib/opencv_contrib-4.2.0/modules/ ..
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D OPENCV_ENABLE_NONFREE=ON -D WITH_CUDA=ON -D WITH_CUDNN=ON -D OPENCV_DNN_CUDA=ON -D ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D CUDA_ARCH_BIN=7.5 -D WITH_CUBLAS=1 -D HAVE_opencv_python3=ON -D BUILD_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=/home/deke/lib/opencv_contrib-4.2.0/modules/ BUILD_TIFF=ON ..
 ```
 ***Note: change the CUDA_ARCH_BIN variable***
 
@@ -43,4 +43,7 @@ problem: *fatal error: boostdesc_bgm.i: No such file or directory*
 solve: down the file by yourself
 file link: [xfeature2d_vgg](https://github.com/opencv/opencv_3rdparty/tree/contrib_xfeatures2d_vgg_20160317) and [xfeature2d_boostdesc](https://github.com/opencv/opencv_3rdparty/tree/contrib_xfeatures2d_boostdesc_20161012)
 4. sudo make install
+
+# undefined reference to `TIFFReadDirectory@LIBTIFF_4.0'
+cmake -D BUILD_TIFF=ON
 
