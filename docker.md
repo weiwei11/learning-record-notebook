@@ -1,4 +1,4 @@
-# docker
+d# docker
 
 ### 本机做成镜像
 ```bash
@@ -48,7 +48,14 @@ sudo service docker restart
 ```
 
 ### 主机与容器间复制文件
+```bash
 sudo docker cp --help
+```
+
+### 查看GPU设备
+```bash
+ls -la /dev | grep nvidia
+```
 
 ### docker 实验
 1. 
@@ -57,7 +64,7 @@ sudo docker run -it --name deke --device /dev/nvidia0:/dev/nvidia0 --device /dev
 ```
 
 2. solve problem
-  1. [docker use gpu](https://stackoverflow.com/questions/25185405/using-gpu-from-a-docker-container#:~:text=Using%20GPU%20from%20a%20docker%20container%3F%201%20Environment.,CUDA%20driver.%20...%2010%20Run%20your%20image.%20)
+  1. [docker use gpu](https://stackoverflow.com/questions/25185405/using-gpu-from-a-docker-container#:~:text=Using%20GPU%20from%20a%20docker%20containe                    r%3F%201%20Environment.,CUDA%20driver.%20...%2010%20Run%20your%20image.%20)
   2. [docker failed to initialize nvml: unknown error](https://stackoverflow.com/questions/25185405/using-gpu-from-a-docker-container#:~:text=Using%20GPU%20from%20a%20docker%20container%3F%201%20Environment.,CUDA%20driver.%20...%2010%20Run%20your%20image.%20)
   3. [Running GUI apps with Docker](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
   4. ```Unable to init server: Could not connect: Connection refused
