@@ -30,6 +30,3 @@ lsmod | grep nouveau
 
 2.5 sudo /usr/bin/nvidia-uninstall
 
----
-# cannot find -lCUDA_cublas_device
-安装更新的cmake即可
