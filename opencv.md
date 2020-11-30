@@ -47,3 +47,5 @@ file link: [xfeature2d_vgg](https://github.com/opencv/opencv_3rdparty/tree/contr
 # undefined reference to `TIFFReadDirectory@LIBTIFF_4.0'
 cmake -D BUILD_TIFF=ON
 
+# fatal error: dynlink_nvcuvid.h: No such file or directory compilation terminated
+BUILD_opencv_cudacodec=OFF
