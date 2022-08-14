@@ -27,4 +27,3 @@ cd ../../examples/python
 python test.py
 python setup.py install
 ```
-
